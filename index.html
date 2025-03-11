@@ -25,14 +25,13 @@
 
     header {
       background: url('Home.png') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       color: #fff;
-      padding: 2rem 0;
       text-align: center;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .logo {
-      display: none;
     }
 
     .creative-image {
@@ -58,7 +57,7 @@
 
     .thumbnails img {
       width: 100%;
-      max-width: 300px;
+      max-width: 400px;
       height: auto;
       border-radius: 10px;
       cursor: pointer;
@@ -82,35 +81,21 @@
 
     .sample-work video {
       width: 100%;
-      max-width: 350px;
+      max-width: 400px;
       height: auto;
       border-radius: 10px;
       cursor: pointer;
     }
 
-    .social-links {
-      margin-top: 30px;
-    }
-
-    .social-links a {
-      margin: 10px;
-      display: inline-block;
-    }
-
-    .social-links img {
-      width: 50px;
-      height: 50px;
-    }
-
     .contact-section img {
       display: block;
       margin: 20px auto;
-      max-width: 300px;
+      max-width: 500px;
     }
 
     @media (max-width: 768px) {
       .thumbnails img, .sample-work video {
-        max-width: 250px;
+        max-width: 300px;
       }
     }
   </style>
@@ -124,9 +109,7 @@
 
   <h2>My Work</h2>
   <div class="thumbnails">
-    <a href="#sample-work"><img src="Portfolio.png" alt="Cinematic Films"></a>
-    <a href="#sample-work"><img src="Portfolio.png" alt="Reels"></a>
-    <a href="#sample-work"><img src="Portfolio.png" alt="Teaser"></a>
+    <a href="#sample-work"><img src="Portfolio.png" alt="Sample Work"></a>
   </div>
 
   <h2>Sample Work</h2>
