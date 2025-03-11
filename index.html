@@ -32,7 +32,7 @@
     }
 
     .logo {
-      display: none; /* Logo background removed */
+      display: none;
     }
 
     .creative-image {
@@ -51,6 +51,11 @@
       margin-top: 20px;
     }
 
+    .thumbnails a {
+      text-decoration: none;
+      color: inherit;
+    }
+
     .thumbnails img {
       width: 100%;
       max-width: 300px;
@@ -64,6 +69,25 @@
       transform: scale(1.1);
     }
 
+    .sample-work {
+      margin-top: 50px;
+    }
+
+    .sample-work .samples {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .sample-work video {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
     .social-links {
       margin-top: 30px;
     }
@@ -74,14 +98,19 @@
     }
 
     .social-links img {
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
     }
 
-    /* Responsive Design */
+    .contact-section img {
+      display: block;
+      margin: 20px auto;
+      max-width: 300px;
+    }
+
     @media (max-width: 768px) {
-      .thumbnails img {
-        max-width: 200px;
+      .thumbnails img, .sample-work video {
+        max-width: 250px;
       }
     }
   </style>
@@ -95,17 +124,47 @@
 
   <h2>My Work</h2>
   <div class="thumbnails">
-    <a href="cinematic.html"><img src="Portfolio.png" alt="Cinematic Films"></a>
-    <a href="reels.html"><img src="Portfolio.png" alt="Reels"></a>
-    <a href="teaser.html"><img src="Portfolio.png" alt="Teaser"></a>
+    <a href="#sample-work"><img src="Portfolio.png" alt="Cinematic Films"></a>
+    <a href="#sample-work"><img src="Portfolio.png" alt="Reels"></a>
+    <a href="#sample-work"><img src="Portfolio.png" alt="Teaser"></a>
   </div>
+
+  <h2>Sample Work</h2>
+  <section id="sample-work" class="sample-work">
+    <div class="samples">
+      <video controls>
+        <source src="cinematic/video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="cinematic/video2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="reels/reel1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="reels/reel2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="teaser/teaser1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="teaser/teaser2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
 
   <h2>Testimonials</h2>
   <img src="Testimonials.png" alt="Testimonials" class="creative-image">
 
-  <div class="social-links">
-    <a href="https://instagram.com/yourprofile" target="_blank"><img src="Contact Page.png" alt="Instagram"></a>
-    <a href="https://wa.me/yourwhatsapp" target="_blank"><img src="Contact Page.png" alt="WhatsApp"></a>
+  <div class="contact-section">
+    <h2>Contact</h2>
+    <img src="Contact Page.png" alt="Contact Information">
     <p>Email: <a href="mailto:kfilms510@gmail.com">kfilms510@gmail.com</a></p>
   </div>
 
