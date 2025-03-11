@@ -31,12 +31,8 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    .logo img {
-      width: 120px;
-      height: auto;
-      border-radius: 10px;
-      display: block;
-      margin: 0 auto;
+    .logo {
+      display: none; /* Logo background removed */
     }
 
     .creative-image {
@@ -56,7 +52,8 @@
     }
 
     .thumbnails img {
-      width: 200px;
+      width: 100%;
+      max-width: 300px;
       height: auto;
       border-radius: 10px;
       cursor: pointer;
@@ -80,23 +77,31 @@
       width: 40px;
       height: 40px;
     }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .thumbnails img {
+        max-width: 200px;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo">
-      <img src="Home.png" alt="Krishna Bhumbar Logo">
-    </div>
   </header>
 
   <img src="About Me.png" alt="Creative Editing Image" class="creative-image">
 
   <h2>My Work</h2>
   <div class="thumbnails">
-    <a href="cinematic.html"><img src="Skills.png" alt="Cinematic Video"></a>
-    <a href="traditional.html"><img src="Testimonials.png" alt="Traditional Video"></a>
+    <a href="cinematic.html"><img src="Portfolio.png" alt="Cinematic Films"></a>
+    <a href="reels.html"><img src="Portfolio.png" alt="Reels"></a>
+    <a href="teaser.html"><img src="Portfolio.png" alt="Teaser"></a>
   </div>
+
+  <h2>Testimonials</h2>
+  <img src="Testimonials.png" alt="Testimonials" class="creative-image">
 
   <div class="social-links">
     <a href="https://instagram.com/yourprofile" target="_blank"><img src="Contact Page.png" alt="Instagram"></a>
