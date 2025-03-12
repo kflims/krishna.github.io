@@ -24,7 +24,6 @@
     }
 
     header {
-      background: url('Home.png') center/cover no-repeat;
       height: 400px;
       display: flex;
       align-items: center;
@@ -32,14 +31,6 @@
       color: #fff;
       text-align: center;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .creative-image {
-      width: 100%;
-      max-width: 800px;
-      display: block;
-      margin: 20px auto;
-      border-radius: 15px;
     }
 
     .thumbnails {
@@ -79,22 +70,16 @@
       flex-wrap: wrap;
     }
 
-    .sample-work video {
+    .sample-work iframe {
       width: 100%;
       max-width: 400px;
-      height: auto;
+      height: 250px;
       border-radius: 10px;
       cursor: pointer;
     }
 
-    .contact-section img {
-      display: block;
-      margin: 20px auto;
-      max-width: 500px;
-    }
-
     @media (max-width: 768px) {
-      .thumbnails img, .sample-work video {
+      .thumbnails img, .sample-work iframe {
         max-width: 300px;
       }
     }
@@ -103,9 +88,8 @@
 <body>
 
   <header>
+    <h1>Krishna Bhumbar - Video Editor Portfolio</h1>
   </header>
-
-  <img src="About Me.png" alt="Creative Editing Image" class="creative-image">
 
   <h2>My Work</h2>
   <div class="thumbnails">
@@ -115,41 +99,14 @@
   <h2>Sample Work</h2>
   <section id="sample-work" class="sample-work">
     <div class="samples">
-      <video controls>
-        <source src="cinematic/video1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <video controls>
-        <source src="cinematic/video2.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <video controls>
-        <source src="reels/reel1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <video controls>
-        <source src="reels/reel2.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <video controls>
-        <source src="teaser/teaser1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <video controls>
-        <source src="teaser/teaser2.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <iframe src="https://drive.google.com/file/d/your_video_id_1/preview" allow="autoplay"></iframe>
+      <iframe src="https://drive.google.com/file/d/your_video_id_2/preview" allow="autoplay"></iframe>
+      <iframe src="https://drive.google.com/file/d/your_video_id_3/preview" allow="autoplay"></iframe>
+      <iframe src="https://drive.google.com/file/d/your_video_id_4/preview" allow="autoplay"></iframe>
+      <iframe src="https://drive.google.com/file/d/your_video_id_5/preview" allow="autoplay"></iframe>
+      <iframe src="https://drive.google.com/file/d/your_video_id_6/preview" allow="autoplay"></iframe>
     </div>
   </section>
-
-  <h2>Testimonials</h2>
-  <img src="Testimonials.png" alt="Testimonials" class="creative-image">
-
-  <div class="contact-section">
-    <h2>Contact</h2>
-    <img src="Contact Page.png" alt="Contact Information">
-    <p>Email: <a href="mailto:kfilms510@gmail.com">kfilms510@gmail.com</a></p>
-  </div>
 
 </body>
 </html>
