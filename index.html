@@ -26,13 +26,6 @@
     header {
       background: url('Home.png') center/cover no-repeat;
       height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-      font-size: 2rem;
-      font-weight: bold;
     }
 
     .work-section {
@@ -58,7 +51,7 @@
     }
 
     .thumbnails img {
-      width: 350px;
+      width: 400px;
       height: auto;
       border-radius: 10px;
       cursor: pointer;
@@ -107,22 +100,22 @@
 
     @media (max-width: 768px) {
       .thumbnails img, .samples img {
-        width: 280px;
+        width: 320px;
       }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    Krishna Bhumbar - Video Editor Portfolio
-  </header>
+  <header></header>
 
   <section class="work-section">
     <h2>My Work</h2>
     <div class="thumbnails">
       <a href="https://drive.google.com/drive/folders/YOUR_CINEMATIC_FOLDER_ID" target="_blank"><img src="Portfolio.png" alt="Cinematic"></a>
       <a href="https://drive.google.com/drive/folders/YOUR_REELS_FOLDER_ID" target="_blank"><img src="Skills.png" alt="Reels"></a>
+    </div>
+    <div class="thumbnails" style="margin-top: 20px;">
       <a href="https://drive.google.com/drive/folders/YOUR_TEASER_FOLDER_ID" target="_blank"><img src="Testimonials.png" alt="Teaser"></a>
     </div>
   </section>
