@@ -16,27 +16,38 @@
     }
 
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Raleway', sans-serif;
       line-height: 1.6;
       color: #333;
-      background-color: #f7f7f7;
+      background-color: #f4f4f4;
       text-align: center;
     }
 
     header {
-      height: 400px;
+      background: url('header-bg.jpg') center/cover no-repeat;
+      height: 300px;
       display: flex;
       align-items: center;
       justify-content: center;
       color: #fff;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .work-section {
+      padding: 50px 20px;
+    }
+
+    .work-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
     }
 
     .thumbnails {
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 30px;
       flex-wrap: wrap;
       margin-top: 20px;
     }
@@ -47,40 +58,56 @@
     }
 
     .thumbnails img {
-      width: 100%;
-      max-width: 400px;
+      width: 350px;
       height: auto;
       border-radius: 10px;
       cursor: pointer;
-      transition: transform 0.3s;
+      transition: transform 0.3s ease-in-out;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
 
     .thumbnails img:hover {
-      transform: scale(1.1);
+      transform: scale(1.08);
     }
 
     .sample-work {
-      margin-top: 50px;
+      padding: 50px 20px;
+      background-color: #fff;
     }
 
-    .sample-work .samples {
+    .sample-work h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .samples {
       display: flex;
       justify-content: center;
       gap: 20px;
       flex-wrap: wrap;
     }
 
-    .sample-work iframe {
-      width: 100%;
-      max-width: 400px;
-      height: 250px;
+    .samples a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .samples img {
+      width: 350px;
+      height: auto;
       border-radius: 10px;
       cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .samples img:hover {
+      transform: scale(1.08);
     }
 
     @media (max-width: 768px) {
-      .thumbnails img, .sample-work iframe {
-        max-width: 300px;
+      .thumbnails img, .samples img {
+        width: 280px;
       }
     }
   </style>
@@ -88,23 +115,15 @@
 <body>
 
   <header>
-    <h1>Krishna Bhumbar - Video Editor Portfolio</h1>
+    Krishna Bhumbar - Video Editor Portfolio
   </header>
 
-  <h2>My Work</h2>
-  <div class="thumbnails">
-    <a href="#sample-work"><img src="Portfolio.png" alt="Sample Work"></a>
-  </div>
-
-  <h2>Sample Work</h2>
-  <section id="sample-work" class="sample-work">
-    <div class="samples">
-      <iframe src="https://drive.google.com/file/d/your_video_id_1/preview" allow="autoplay"></iframe>
-      <iframe src="https://drive.google.com/file/d/your_video_id_2/preview" allow="autoplay"></iframe>
-      <iframe src="https://drive.google.com/file/d/your_video_id_3/preview" allow="autoplay"></iframe>
-      <iframe src="https://drive.google.com/file/d/your_video_id_4/preview" allow="autoplay"></iframe>
-      <iframe src="https://drive.google.com/file/d/your_video_id_5/preview" allow="autoplay"></iframe>
-      <iframe src="https://drive.google.com/file/d/your_video_id_6/preview" allow="autoplay"></iframe>
+  <section class="work-section">
+    <h2>My Work</h2>
+    <div class="thumbnails">
+      <a href="https://drive.google.com/drive/folders/YOUR_CINEMATIC_FOLDER_ID" target="_blank"><img src="cinematic-thumbnail.jpg" alt="Cinematic"></a>
+      <a href="https://drive.google.com/drive/folders/YOUR_REELS_FOLDER_ID" target="_blank"><img src="reels-thumbnail.jpg" alt="Reels"></a>
+      <a href="https://drive.google.com/drive/folders/YOUR_TEASER_FOLDER_ID" target="_blank"><img src="teaser-thumbnail.jpg" alt="Teaser"></a>
     </div>
   </section>
 
